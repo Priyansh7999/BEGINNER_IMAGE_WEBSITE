@@ -1,91 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.LOGO{
-    text-align: center;
-    color: rgb(28, 188, 81);
-    font-size: 30px;
-    font-family: monospace;
-    text-shadow: 0 3px 7px rgb(37, 164, 56);
-    background: transparent;
-    backdrop-filter: blur(8px); 
-    width: 100%;
-    border: none;
-    outline: none;
-    height: 35px;
-    padding: 10px;
-    position: fixed;
-    z-index: 1;
-}
-.navbar{
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    backdrop-filter: blur(8px); 
-    width: 100%;
-    top: 55px;
-    z-index: 2;
-    border:1px solid rgb(6, 255, 6);
-}
-.navbar li{
-    float: left;
-    list-style-type: none;
-    text-align: center;
-}
-.navbar li a{
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-    color: rgb(85, 255, 7);
-}
-.navbar a:hover{
-    color: white;
-    transition: 0.5s ease-in;
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url('img4.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
 }
 
-.bodyy{
-    position: absolute;
-    max-width: 100%;
-    min-height: 100vh;
+.LOGO {
+  text-align: center;
+  color: rgb(28, 188, 81);
+  font-size: 30px;
+  font-family: monospace;
+  text-shadow: 0 3px 7px rgb(37, 164, 56);
+  background: transparent;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 35px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
 }
-main{
-    top: 100px;
-    background-size:auto;
-    height: 100%;
+
+.navbar {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  top: 55px;
+  z-index: 2;
+  border: 1px solid rgb(6, 255, 6);
 }
+
+.navbar li {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  background: transparent;
+}
+
+.navbar li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: transparent;
+  cursor: pointer;
+  color: rgb(85, 255, 7);
+}
+
+.navbar a:hover {
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+.bodyy {
+  max-width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(4px);
+  z-index: 3;
+}
+
+main {
+  top: 100px;
+  background-size: auto;
+  height: 100%;
+  background: transparent;
+  position: relative;
+  z-index: 4;
+}
+
 h1 {
-    position: relative;
-    top: 120px;
-    text-align: center;
-    color: rgb(49, 226, 49);
-    font-family: monospace;
-    text-decoration: underline;
-  }
-.headline{
-    position: relative;
-    top:370px;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(125, 219, 125);
-    font-family: monospace;
+  top: 120px;
+  text-align: center;
+  color: rgb(49, 226, 49);
+  background: transparent;
+  font-family: monospace;
+  text-decoration: underline;
+  z-index: 5;
 }
 
+.headline {
+position: relative;
+  top: 360px;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(125, 219, 125);
+  font-family: monospace;
+  background: transparent;
+  z-index: 6;
+}
 
-
-.aboutimg{
-    position: absolute;
-    width: 100%;
-    height: 1200px;
-    top: 100vh;
+.aboutimg {
+  width: 100%;
+  height: 1200px;
+  top: 100vh;
+  z-index: 7;
 }
 .HOME{
     color: rgb(7, 151, 7);
     font-size: 40px;
+    z-index: 3;
     position: relative;
     margin-left: 45%;
+    background: transparent;
     font-family: cursive;
     text-decoration: underline 2px;
     top:940px;
@@ -94,7 +116,9 @@ h1 {
 .earth{
     position: relative;
     top: 1050px;
+    z-index: 4;
     max-width: 100%;
+    background: transparent;
     min-height: 30px;
     margin-left: 20%;
     width: 900px;
@@ -109,6 +133,7 @@ h1 {
 }
 .gallimg{
     position: absolute;
+    background: transparent;
     width: 100%;
     height: 900px;
     top: 1900px;
@@ -118,6 +143,7 @@ h2{
     font-size: 40px;
     position: relative;
     margin-left: 20%;
+    background: transparent;
     font-family: cursive;
     text-decoration: underline 2px;
     top:1960px;
@@ -128,6 +154,7 @@ h2{
     position: relative;
     margin-left: 50%;
     top: 1700px;
+    background: transparent;
 }
 
 .mySlides {
@@ -215,20 +242,22 @@ h2{
     margin-bottom: 10px;
     font-family: monospace;
     font-size: 20px;
+    color: #3e8e41;
   }
   
   .box input, .box textarea {
     width: 95%;
+    border: 2px solid #3e8e41;
     padding: 10px;
     margin: 10px;
     margin-bottom: 20px;
-    border: none;
+    color: #4CAF50;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
   .box button {
-    background-color: #4CAF50;
+    background-color: #090a09;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -237,5 +266,6 @@ h2{
   }
   
   .box button:hover {
-    background-color: #3e8e41;
+    
+    background-color: #090a09;
   }
