@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.LOGO{
+    text-align: center;
+    color: rgb(28, 188, 81);
+    font-size: 30px;
+    font-family: monospace;
+    text-shadow: 0 3px 7px rgb(37, 164, 56);
+    background: transparent;
+    backdrop-filter: blur(8px); 
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+.navbar{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    backdrop-filter: blur(8px); 
+    width: 100%;
+    top: 55px;
+    z-index: 2;
+    border:1px solid rgb(6, 255, 6);
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(85, 255, 7);
+}
+.navbar a:hover{
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.bodyy{
+    position: absolute;
+    max-width: 100%;
+    min-height: 100vh;
+}
+main{
+    top: 100px;
+    background-size:auto;
+    height: 100%;
+}
+h1 {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    color: rgb(49, 226, 49);
+    font-family: monospace;
+    text-decoration: underline;
+  }
+.headline{
+    position: relative;
+    top:370px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(125, 219, 125);
+    font-family: monospace;
+}
+
+
+
+.aboutimg{
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    top: 100vh;
+}
+.HOME{
+    color: rgb(7, 151, 7);
+    font-size: 40px;
+    position: relative;
+    margin-left: 45%;
+    font-family: cursive;
+    text-decoration: underline 2px;
+    top:940px;
+    text-shadow: 0px 2px black;
+}
+.earth{
+    position: relative;
+    top: 1050px;
+    max-width: 100%;
+    min-height: 30px;
+    margin-left: 20%;
+    width: 900px;
+    font-size: 30px;
+    color: rgb(33, 53, 4);
+    text-overflow: ellipsis;
+    font-family: cursive;
+    backdrop-filter: blur(4px);
+    height: fit-content;
+    box-shadow: 0px 6px 20px rgba(181, 175, 175, 0.2);
+    border-radius: 3%;
+}
+.gallimg{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    top: 1900px;
+}
+h2{
+    color: rgb(7, 151, 7);
+    font-size: 40px;
+    position: relative;
+    margin-left: 20%;
+    font-family: cursive;
+    text-decoration: underline 2px;
+    top:1960px;
+    text-shadow: 0px 2px black;
+}
+.slideshow-container {
+    width: 500px;
+    position: relative;
+    margin-left: 50%;
+    top: 1700px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 500px;
+    height: 300px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    color: green;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    background-color: rgb(28, 55, 28);
+    margin-left: 0;
+    border-radius:45px;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    color: green;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    background-color: rgb(28, 55, 28);
+    margin-left: 80%;
+    border-radius:45px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.conimg{
+    position: relative;
+    width: 50%;
+    height: 800px;
+    top: 2050px;
+    border-radius: 25px;
+}
+.contact{
+    position: relative;
+    top: 1260px;
+    margin-left: 67%;
+    font-family: cursive;
+    font-size: 50px;
+    color: rgb(51, 23, 212);
+}
+.box {
+    position: relative;
+    background-color: aqua;
+    width: 400px;
+    margin-left: 60%;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    padding: 20px; /* add some padding to make the form fields breathe */
+    border-radius: 10px; /* add a subtle border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle box shadow */
+    top:1300px
+  }
+
+.box label {
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  
+  .box input, .box textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .box button:hover {
+    background-color: #3e8e41;
+  }
